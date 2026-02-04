@@ -9,7 +9,7 @@
     </div>
     <div class="mt-9">
       <h2 class="text-5xl md:text-6xl font-bold text-white mb-5">احدث المقالات</h2>
-      <div class="flex flex-col md:flex-row justify-between">
+      <div class="flex flex-col md:flex-row justify-between gap-3">
         <p class="text-neutral-400 text-lg">محتوى جديد طازج من المطبعة</p>
         <a
           routerLink="blog"
@@ -24,7 +24,7 @@
       </div>
     </div>
     <!-- Latest articles -->
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Render articles cards -->
       @for (item of getLatestArticles; track item.id) {
         <div

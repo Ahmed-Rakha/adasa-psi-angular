@@ -22,7 +22,6 @@
       </a>
     </div>
     <!-- Render articles cards -->
-
     @for (item of getFeaturedArticles; track item.id) {
       <div
         (click)="onArticleClick(item.slug)"
