@@ -1,0 +1,40 @@
+<section id="who-are-we" class="pb-10">
+  <div class="container">
+    <div class="w-fit flex gap-3 items-center mx-auto px-4 py-3 rounded-full bg-[#f9741628]">
+      <div class="rounded-full size-2 bg-orange-500 animate-pulse"></div>
+      <div class="rounded-full size-2 bg-orange-500">
+        <div class="animate-ping rounded-full size-2 bg-orange-500"></div>
+      </div>
+      <p class="text-white">من نحن</p>
+    </div>
+    <div class="mt-9">
+      <h2 class="text-5xl md:text-6xl font-bold text-center my-12">
+        <span class="text-white">مهمتنا هي</span>
+        <span>{{ ' ' }}</span>
+        <span class="text-yellow-500">الإعلام</span>
+        <span>{{ ' ' }}</span>
+        <span class="bg-linear-to-l from-amber-500 to-amber-700 bg-clip-text text-transparent"
+          >والإلهام</span
+        >
+      </h2>
+      <p class="text-neutral-400 text-lg text-center w-full md:w-1/2 mx-auto">
+        مدونة متخصصة في فن التصوير الفوتوغرافي، نشارك معكم أسرار المحترفين ونصائح عملية لتطوير
+        مهاراتكم. نحن شغوفون بمشاركة المعرفة ومساعدة المصورين على تنمية مهاراتهم من خلال محتوى عالي
+        الجودة.
+      </p>
+    </div>
+    <div
+      class="grid grid-cols-[repeat(auto-fit,170px)] md:grid-cols-[repeat(auto-fit,200px)] justify-center gap-5 mt-8"
+    >
+      @for (item of discoveryItems; track item.id) {
+        <div class="bg-[#191616bd] rounded-4xl text-center px-13 py-5">
+          <div class="flex items-center justify-center text-orange-500 text-3xl">
+            <span class="material-icons">{{ item.icon }}</span>
+          </div>
+          <h4 class="text-orange-400 my-1 text-3xl font-bold">{{ item.title }}</h4>
+          <p class="text-neutral-400 text-lg">{{ item.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
