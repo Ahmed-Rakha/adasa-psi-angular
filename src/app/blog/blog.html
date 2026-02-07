@@ -1,21 +1,8 @@
-<section id="blog" class="bg-[#231f1f] py-18">
-  <div class="container">
-    <div class="w-fit flex gap-3 items-center mx-auto px-4 py-3 rounded-full bg-[#f9741628]">
-      <div class="rounded-full size-2 bg-orange-500 animate-pulse"></div>
-      <span class="material-icons text-orange-500">library_books</span>
-      <p class="text-white">الأحدث</p>
-    </div>
-    <div class="mt-13 text-center">
-      <h2 class="text-5xl md:text-6xl font-bold mb-5">
-        <span class="text-white">استكشف </span>
-        <span class="bg-linear-to-l from-amber-500 to-amber-700 bg-clip-text text-transparent"
-          >مقالاتنا</span
-        >
-      </h2>
-      <p class="text-neutral-400 text-lg">اكتشف الدروس والرؤى وأفضل الممارسات للتطوير الحديث</p>
-      <div class="mt-12">
-        <h1 class="text-white text-center text-6xl animate-bounce">....To be Developed</h1>
-      </div>
-    </div>
-  </div>
-</section>
+<main class="bg-[#231f1f] pt-18">
+  <section id="blog-header" class="mb-18">
+    <app-blog-header></app-blog-header>
+  </section>
+  <section id="blog-grid" class="bg-[#120f0f]">
+    <app-blog-grid [categories]="categories" [articles]="posts" ]></app-blog-grid>
+  </section>
+</main>
